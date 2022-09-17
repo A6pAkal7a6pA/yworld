@@ -1,6 +1,6 @@
 .main {
-	// background: #fa6200;
-	padding: 90px 0 75px 0;
+padding-bottom: 75px;
+padding-top: 75px;
 	max-height: 100vh;
 	height: 100%;
 	&__inner {
@@ -10,7 +10,7 @@
 		padding: 0 15px;
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: center;
 	}
 
 	&__menu {
@@ -19,7 +19,8 @@
 	&__body {
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		justify-content: space-between;
+		flex-grow: 1;
 	}
 
 	&__title {
