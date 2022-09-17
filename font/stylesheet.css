@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'CocoBikeR';
+    src: url('CocoBikeR.eot');
+    src: local('CocoBikeR'),
+        url('CocoBikeR.eot?#iefix') format('embedded-opentype'),
+        url('CocoBikeR.woff2') format('woff2'),
+        url('CocoBikeR.woff') format('woff'),
+        url('CocoBikeR.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CocoBikeR';
+    src: url('CocoBikeR-Bold.eot');
+    src: local('CocoBikeR Bold'), local('CocoBikeR-Bold'),
+        url('CocoBikeR-Bold.eot?#iefix') format('embedded-opentype'),
+        url('CocoBikeR-Bold.woff2') format('woff2'),
+        url('CocoBikeR-Bold.woff') format('woff'),
+        url('CocoBikeR-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CocoBikeR';
+    src: url('CocoBikeR-Light.eot');
+    src: local('CocoBikeR Light'), local('CocoBikeR-Light'),
+        url('CocoBikeR-Light.eot?#iefix') format('embedded-opentype'),
+        url('CocoBikeR-Light.woff2') format('woff2'),
+        url('CocoBikeR-Light.woff') format('woff'),
+        url('CocoBikeR-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CocoBikeR';
+    src: url('CocoBikeR-UltraLight.eot');
+    src: local('CocoBikeR UltraLight'), local('CocoBikeR-UltraLight'),
+        url('CocoBikeR-UltraLight.eot?#iefix') format('embedded-opentype'),
+        url('CocoBikeR-UltraLight.woff2') format('woff2'),
+        url('CocoBikeR-UltraLight.woff') format('woff'),
+        url('CocoBikeR-UltraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CocoBikeR';
+    src: url('CocoBikeR-Heavy.eot');
+    src: local('CocoBikeR Heavy'), local('CocoBikeR-Heavy'),
+        url('CocoBikeR-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('CocoBikeR-Heavy.woff2') format('woff2'),
+        url('CocoBikeR-Heavy.woff') format('woff'),
+        url('CocoBikeR-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+

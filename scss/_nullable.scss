@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+@font-face {
+	font-family: "CocoBikeR";
+	src: url("../font/CocoBikeR.eot");
+	src: local("CocoBikeR"), url("../font/../font/CocoBikeR.eot?#iefix") format("embedded-opentype"),
+		url("../font/CocoBikeR.woff2") format("woff2"), url("../font/CocoBikeR.woff") format("woff"),
+		url("../font/CocoBikeR.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "CocoBikeR";
+	src: url("../font/CocoBikeR-Bold.eot");
+	src: local("CocoBikeR Bold"), local("CocoBikeR-Bold"),
+		url("../font/CocoBikeR-Bold.eot?#iefix") format("embedded-opentype"),
+		url("../font/CocoBikeR-Bold.woff2") format("woff2"), url("../font/CocoBikeR-Bold.woff") format("woff"),
+		url("../font/CocoBikeR-Bold.ttf") format("truetype");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "CocoBikeR";
+	src: url("../font/CocoBikeR-Light.eot");
+	src: local("CocoBikeR Light"), local("CocoBikeR-Light"),
+		url("../font/CocoBikeR-Light.eot?#iefix") format("embedded-opentype"),
+		url("../font/CocoBikeR-Light.woff2") format("woff2"), url("../font/CocoBikeR-Light.woff") format("woff"),
+		url("../font/CocoBikeR-Light.ttf") format("truetype");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "CocoBikeR";
+	src: url("../font/CocoBikeR-UltraLight.eot");
+	src: local("CocoBikeR UltraLight"), local("CocoBikeR-UltraLight"),
+		url("../font/CocoBikeR-UltraLight.eot?#iefix") format("embedded-opentype"),
+		url("../font/CocoBikeR-UltraLight.woff2") format("woff2"), url("../font/CocoBikeR-UltraLight.woff") format("woff"),
+		url("../font/CocoBikeR-UltraLight.ttf") format("truetype");
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "CocoBikeR";
+	src: url("../font/CocoBikeR-Heavy.eot");
+	src: local("CocoBikeR Heavy"), local("CocoBikeR-Heavy"),
+		url("../font/CocoBikeR-Heavy.eot?#iefix") format("embedded-opentype"),
+		url("../font/CocoBikeR-Heavy.woff2") format("woff2"), url("../font/CocoBikeR-Heavy.woff") format("woff"),
+		url("../font/CocoBikeR-Heavy.ttf") format("truetype");
+	font-weight: 900;
+	font-style: normal;
+}
+
+$fontFamilyCocoBiker: "CocoBikeR";
+$fontfamilyMontserrat: 'Montserrat', sans-serif;
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,
+:active {
+	outline: none;
+}
+a:focus,
+a:active {
+	outline: none;
+}
+nav,
+footer,
+header,
+aside,
+section {
+	display: block;
+}
+html,
+body {
+	height: 100%;
+	width: 100%;
+}
+body {
+	font-family: $fontFamilyCocoBiker;
+	font-size: 24px;
+	font-style: normal;
+	font-weight: 300;
+	color: #000;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,
+button,
+textarea {
+	font-family: $fontFamilyCocoBiker;
+}
+input::-ms-clear {
+	display: none;
+}
+button {
+	cursor: pointer;
+}
+button::-moz-focus-inner {
+	padding: 0;
+	border: 0;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+ul li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: inherit;
+	font-weight: inherit;
+}
+
+a {
+	font-family: $fontFamilyCocoBiker;
+}
