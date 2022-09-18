@@ -1,0 +1,51 @@
+.road {
+	&__body {
+		flex-direction: column;
+		gap: 45px;
+		justify-content: space-between;
+		flex-grow: 1;
+	}
+
+	&__title {
+	}
+
+	&__phases {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		max-width: 1284px;
+	}
+
+	&__phase {
+	}
+
+	&__phase-title {
+		font-size: 22px;
+		line-height: 18px;
+		margin-bottom: 25px;
+		font-weight: 400;
+		text-transform: uppercase;
+		font-family: $fontFamilyCocoBiker;
+	}
+
+	&__phase-text {
+		font-family: $fontFamilyCocoBiker;
+		font-weight: 400;
+		text-transform: uppercase;
+		font-size: 11px;
+		letter-spacing: 8px;
+	}
+
+	&__footer {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	&__socio {
+	}
+}
+
+.main-socio {
+	&__item {
+	}
+}

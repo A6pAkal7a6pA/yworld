@@ -1,9 +1,32 @@
 @import "_nullable.scss";
-@import "_header.scss";
+@import "_about.scss";
+@import "_road.scss";
 @import "_main.scss";
+body {
+	overflow: hidden;
+}
 
 .wrapper {
 	background: #fa6200;
 	min-height: 100vh;
 	height: 100%;
+}
+section {
+}
+.title {
+	font-size: 100px;
+	line-height: 80px;
+	letter-spacing: 60px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: right;
+	margin-right: -60px;
+}
+.container {
+	max-width: 1730px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+.number {
+	font-family: $fontfamilyMontserrat;
 }
