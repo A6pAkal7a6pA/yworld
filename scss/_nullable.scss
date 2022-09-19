@@ -54,7 +54,7 @@
 }
 
 $fontFamilyCocoBiker: "CocoBikeR";
-$fontfamilyMontserrat: 'Montserrat', sans-serif;
+$fontfamilyEvolventa:'evolventa-regular', sans-serif;
 
 * {
 	padding: 0;
@@ -87,6 +87,7 @@ html,
 body {
 	height: 100%;
 	width: 100%;
+	overflow: hidden;
 }
 body {
 	font-family: $fontFamilyCocoBiker;

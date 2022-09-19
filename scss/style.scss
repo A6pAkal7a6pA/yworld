@@ -12,6 +12,8 @@ body {
 	height: 100%;
 }
 section {
+	width: 100%;
+	// max-height: 762px;
 }
 .title {
 	font-size: 100px;
@@ -28,5 +30,17 @@ section {
 	padding: 0 15px;
 }
 .number {
-	font-family: $fontfamilyMontserrat;
+	font-family: $fontfamilyEvolventa;
+}
+
+.content {
+	height: 562px;
+	width: 1280px;
+	overflow-y: auto;
+}
+
+@media (max-width: 1839px) {
+	.title {
+		margin-right: 0;
+	}
 }

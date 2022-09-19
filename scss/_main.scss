@@ -14,23 +14,31 @@
 	}
 	&__line {
 		position: absolute;
-		width: 19%;
-		height: 150%;
+		width: 45%;
+		height: 136%;
 		background: #000;
 		top: -25%;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		z-index: 1;
-		left: 16%;
+		left: 50%;
+		transform: translateX(-50%);
 		rotate: -27deg;
 		overflow: hidden;
+
 		video {
 			object-fit: contain;
 			width: 300%;
-
 		}
-	
+	}
+	&__half {
+		width: 50%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		display: none;
 	}
 	&__body {
 		display: flex;
@@ -61,7 +69,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		font-family: $fontfamilyMontserrat;
+		font-family: $fontfamilyEvolventa;
 		text-transform: uppercase;
 		font-size: 25px;
 		letter-spacing: 15px;
@@ -125,7 +133,7 @@
 		color: #fff;
 		font-size: 32px;
 		letter-spacing: 10px;
-		font-family: $fontfamilyMontserrat;
+		font-family: $fontfamilyEvolventa;
 		text-transform: uppercase;
 	}
 }
@@ -139,4 +147,98 @@
 	}
 }
 
+@media (max-width: 1626px) {
+	.main {
+		&__body {
+			flex-direction: column;
+			justify-content: space-around;
+		}
+	}
+}
 
+@media (max-width: 1150px) {
+	.main {
+		&__title {
+			letter-spacing: 45px;
+		}
+	}
+	.menu__item {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 859px) {
+	.main {
+		&__title {
+			letter-spacing: 25px;
+			font-size: 100px;
+		}
+		&__footer {
+			justify-content: center;
+		}
+	}
+	.menu {
+		&__link {
+			font-size: 24px;
+		}
+	}
+	.menu__item {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media (max-width: 675px) {
+	.main__buttons {
+		width: 100%;
+		justify-content: space-between;
+		height: 95px;
+	}
+	.main__button {
+		max-width: 100%;
+		// width: 145px;
+	}
+
+	.main {
+		&__title {
+			letter-spacing: 20px;
+			font-size: 70px;
+		}
+	}
+
+	.menu {
+		&__link {
+			font-size: 18px;
+		}
+	}
+}
+@media (max-width: 500px) {
+	.menu {
+		&__list {
+			gap: 10px;
+		}
+		&__link {
+			font-size: 12px;
+		}
+	}
+
+	.main {
+		&__title {
+			letter-spacing: 10px;
+			font-size: 50px;
+		}
+	}
+
+	.main__buttons {
+		gap: 10px;
+		height: 75px;
+	}
+
+	.main__button {
+		font-size: 17px;
+		letter-spacing: 5px;
+	}
+}
