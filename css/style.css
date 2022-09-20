@@ -259,16 +259,12 @@ a {
 }
 
 .main {
-  padding: 75px 0;
   max-height: 100vh;
   height: 100%;
 }
 
 .main__inner {
   height: 100%;
-  max-width: 1730px;
-  margin: 0 auto;
-  padding: 0 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,10 +279,7 @@ a {
 
 .main__line {
   position: absolute;
-  width: 45%;
-  height: 136%;
   background: #000;
-  top: -25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -297,26 +290,39 @@ a {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 1;
-  left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   rotate: -27deg;
   overflow: hidden;
+  width: 37%;
+  height: 150%;
+  top: -34%;
+  left: 41%;
 }
 
 .main__line video {
-  -o-object-fit: contain;
-     object-fit: contain;
-  width: 300%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
 }
 
 .main__half {
-  width: 50%;
+  width: 100vh;
   height: 100%;
-  position: absolute;
-  left: 0;
+  position: relative;
   top: 0;
-  display: none;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .main__body {
@@ -336,11 +342,16 @@ a {
 
 .main__title {
   color: #fff;
-  font-size: 125px;
+  font-size: 12vh;
   letter-spacing: 72px;
   line-height: 100px;
   position: relative;
   z-index: 2;
+  margin-right: -72px;
+}
+
+.main__title span {
+  color: #2B2B2B;
 }
 
 .main__buttons {
@@ -414,6 +425,9 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  position: absolute;
+  right: 100px;
+  bottom: 70px;
 }
 
 .menu {
@@ -426,6 +440,11 @@ a {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  position: absolute;
+  right: 100px;
+  top: 70px;
+  max-width: 917px;
+  width: 100%;
   margin-bottom: 70px;
 }
 
@@ -465,97 +484,6 @@ a {
   max-height: 59px;
 }
 
-@media (max-width: 1626px) {
-  .main__body {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-}
-
-@media (max-width: 1150px) {
-  .main__title {
-    letter-spacing: 45px;
-  }
-  .menu__item {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-@media (max-width: 859px) {
-  .main__title {
-    letter-spacing: 25px;
-    font-size: 100px;
-  }
-  .main__footer {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .menu__link {
-    font-size: 24px;
-  }
-  .menu__item {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-@media (max-width: 675px) {
-  .main__buttons {
-    width: 100%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    height: 95px;
-  }
-  .main__button {
-    max-width: 100%;
-  }
-  .main__title {
-    letter-spacing: 20px;
-    font-size: 70px;
-  }
-  .menu__link {
-    font-size: 18px;
-  }
-}
-
-@media (max-width: 500px) {
-  .menu__list {
-    gap: 10px;
-  }
-  .menu__link {
-    font-size: 12px;
-  }
-  .main__title {
-    letter-spacing: 10px;
-    font-size: 50px;
-  }
-  .main__buttons {
-    gap: 10px;
-    height: 75px;
-  }
-  .main__button {
-    font-size: 17px;
-    letter-spacing: 5px;
-  }
-}
-
 body {
   overflow: hidden;
 }
@@ -578,12 +506,6 @@ section {
   text-transform: uppercase;
   text-align: right;
   margin-right: -60px;
-}
-
-.container {
-  max-width: 1730px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 .number {
