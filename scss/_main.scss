@@ -20,9 +20,9 @@
 		rotate: -27deg;
 		overflow: hidden;
 		width: 37%;
-    height: 150%;
-    top: -34%;
-    left: 41%;
+		height: 150%;
+		top: -34%;
+		left: 41%;
 
 		video {
 			object-fit: cover;
@@ -47,6 +47,9 @@
 		align-items: center;
 		justify-content: space-between;
 		flex-grow: 1;
+		max-width: 1750px;
+		margin: 0 auto;
+		padding: 0 15px;
 	}
 
 	&__title {
@@ -59,7 +62,7 @@
 		z-index: 2;
 		margin-right: -72px;
 		span {
-			color: #2B2B2B;
+			color: #2b2b2b;
 		}
 	}
 
@@ -120,6 +123,9 @@
 		position: absolute;
 		right: 100px;
 		bottom: 70px;
+		.main__button {
+			display: none;
+		}
 	}
 }
 
@@ -163,98 +169,158 @@
 	}
 }
 
-// @media (max-width: 1626px) {
-// 	.main {
-// 		&__body {
-// 			flex-direction: column;
-// 			justify-content: space-around;
-// 		}
-// 	}
-// }
+@media (max-width: 1650px) {
+	.main__title {
+		font-size: 10vh;
+	}
+	.main__line {
+		width: 34%;
+	}
+	.main__button {
+		width: 270px;
+	}
+}
 
-// @media (max-width: 1150px) {
-// 	.main {
-// 		&__title {
-// 			letter-spacing: 45px;
-// 		}
-// 	}
-// 	.menu__item {
-// 		width: 100%;
-// 		display: flex;
-// 		justify-content: center;
-// 	}
-// }
+@media (max-width: 1440px) {
+	.main__title {
+		font-size: 8vh;
+	}
+	.main__line {
+		width: 34%;
+	}
+	.main__button {
+		width: 250px;
+	}
+	.main__buttons {
+		height: 100px;
+	}
+}
 
-// @media (max-width: 859px) {
-// 	.main {
-// 		&__title {
-// 			letter-spacing: 25px;
-// 			font-size: 100px;
-// 		}
-// 		&__footer {
-// 			justify-content: center;
-// 		}
-// 	}
-// 	.menu {
-// 		&__link {
-// 			font-size: 24px;
-// 		}
-// 	}
-// 	.menu__item {
-// 		width: 100%;
-// 		display: flex;
-// 		justify-content: center;
-// 	}
-// }
+@media (max-width: 1380px) {
+	.menu__list {
+		max-width: 700px;
+	}
+	.menu__link {
+		font-size: 27px;
+	}
+}
 
-// @media (max-width: 675px) {
-// 	.main__buttons {
-// 		width: 100%;
-// 		justify-content: space-between;
-// 		height: 95px;
-// 	}
-// 	.main__button {
-// 		max-width: 100%;
-// 		// width: 145px;
-// 	}
+@media (max-width: 1271px) {
+	.main__title {
+		font-size: 7vh;
+	}
+	.main__button {
+		width: 220px;
+	}
+	.main__buttons {
+		height: 90px;
+	}
+	.main-socio__item img {
+		max-height: 45px;
+	}
+}
+@media (max-width: 1024px) {
+	.menu__list {
+		max-width: 600px;
+	}
+	.menu__link {
+		font-size: 22px;
+	}
+	.main__button {
+		width: 180px;
+		font-size: 20px;
+	}
+	.main__buttons {
+		height: 70px;
+	}
+	.main__title {
+		font-size: 4vh;
+	}
+	.main-socio__item img {
+		max-height: 40px;
+	}
+	.menu {
+		width: 100%;
+		max-width: 100%;
+		right: 15px;
+	}
+	.main__footer {
+		right: 15px;
+	}
+}
 
-// 	.main {
-// 		&__title {
-// 			letter-spacing: 20px;
-// 			font-size: 70px;
-// 		}
-// 	}
+@media (max-width: 954px) {
+	.menu__link {
+		font-size: 18px;
+	}
+	.main__button {
+		width: 170px;
+		font-size: 18px;
+	}
+	.main__buttons {
+		height: 60px;
+		gap: 15px;
+	}
+	.menu__list {
+		max-width: 500px;
+	}
+}
 
-// 	.menu {
-// 		&__link {
-// 			font-size: 18px;
-// 		}
-// 	}
-// }
-// @media (max-width: 500px) {
-// 	.menu {
-// 		&__list {
-// 			gap: 10px;
-// 		}
-// 		&__link {
-// 			font-size: 12px;
-// 		}
-// 	}
+@media (max-width: 900px) {
+	.menu__list {
+		max-width: 100%;
+	}
+	.main__body {
+		flex-direction: column;
+	}
+	.main__half {
+		top: auto;
+		bottom: 0;
+	}
+	.main__line {
+		rotate: 90deg;
+		width: 25%;
+		top: -12%;
+		left: 34%;
+	}
+	.main__buttons {
+		margin-bottom: 40px;
+		display: none;
+	}
+	.menu {
+		right: 0;
+		max-width: calc(100% - 30px);
+	}
+	.main__footer {
+		right: auto;
+		left: 50%;
+		transform: translateX(-50%);
+		.main__button {
+			text-align: center;
+			display: block;
+			background: #2b2b2b;
+			color: #fff;
+			padding: 20px;
+		}
+	}
+}
 
-// 	.main {
-// 		&__title {
-// 			letter-spacing: 10px;
-// 			font-size: 50px;
-// 		}
-// 	}
-
-// 	.main__buttons {
-// 		gap: 10px;
-// 		height: 75px;
-// 	}
-
-// 	.main__button {
-// 		font-size: 17px;
-// 		letter-spacing: 5px;
-// 	}
-// }
+@media (max-width: 500px) {
+	.main__line {
+		rotate: 130deg;
+    width: 18%;
+    top: -17%;
+    left: 44%;
+	}
+	.main__title {
+		letter-spacing: 15px;
+		font-size: 12vw;
+		left: -6vw;
+	}
+	.menu__link {
+		font-size: 3.5vw;
+	}
+	.main__half {
+		width: 100%;
+	}
+}
