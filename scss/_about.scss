@@ -19,6 +19,8 @@
 		flex-direction: column;
 		gap: 20px;
 		max-width: 1280px;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
 		p {
 			line-height: 23px;
 			font-size: 17px;
@@ -28,6 +30,10 @@
 			overflow: hidden;
 			width: 100%;
 		}
+	}
+
+	&__content::-webkit-scrollbar {
+		display: none;
 	}
 
 	&__footer {

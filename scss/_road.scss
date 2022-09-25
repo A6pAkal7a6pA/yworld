@@ -22,6 +22,12 @@
 		width: 100%;
 		padding-bottom: 50px;
 		overflow: auto;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+	}
+
+	&__phases::-webkit-scrollbar {
+		display: none;
 	}
 
 	&__phase {

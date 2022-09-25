@@ -270,7 +270,7 @@
 @media (max-width: 900px) {
 	.menu__list {
 		max-width: calc(100% - 30px);
-    margin: 0 auto;
+		margin: 0 auto;
 		right: auto;
 		// left: 0;
 	}
@@ -302,7 +302,7 @@
 			display: block;
 			background: #2b2b2b;
 			color: #fff;
-			padding: 20px;
+			padding: 20px 20px 20px 35px;
 		}
 	}
 }
@@ -328,5 +328,23 @@
 	}
 	.main__half {
 		width: 100%;
+	}
+}
+
+@media (max-width: 390px) {
+	.main__line {
+		top: -18%;
+	}
+}
+
+@media (max-width: 400px) and (max-height: 750px) {
+	.main__line {
+		top: -16%;
+	}
+}
+
+@media (max-width: 370px) and (max-height: 750px) {
+	.main__line {
+		top: -17.5%;
 	}
 }
