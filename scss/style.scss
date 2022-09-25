@@ -7,7 +7,7 @@ body {
 }
 
 .wrapper {
-	background: #fa6200;
+	background: #FA6200;
 	min-height: 100vh;
 	height: 100%;
 }
@@ -16,13 +16,11 @@ section {
 	// max-height: 762px;
 }
 .title {
-	font-size: 100px;
 	line-height: 80px;
 	letter-spacing: 60px;
 	color: #fff;
 	text-transform: uppercase;
-	text-align: right;
-	margin-right: -60px;
+	// margin-right: -60px;
 }
 .container {
 	// max-width: 1730px;
@@ -33,14 +31,15 @@ section {
 	font-family: $fontfamilyEvolventa;
 }
 
-.content {
-	height: 562px;
-	width: 1280px;
-	overflow-y: auto;
-}
-
 @media (max-width: 1839px) {
 	.title {
-		margin-right: 0;
+		// margin-right: 0;
+	}
+}
+
+@media(max-width: 500px) {
+	.title {
+		letter-spacing: 30px;
+		margin-right: -30px;
 	}
 }

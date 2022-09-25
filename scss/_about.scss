@@ -1,12 +1,17 @@
 .about {
-
 	&__body {
 		flex-direction: column;
 		gap: 100px;
-		flex-grow: 1;
+		max-width: 1730px;
+		padding: 0 15px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 190px;
 	}
 
 	&__title {
+		font-size: 100px;
+		text-align: right;
 	}
 
 	&__content {
@@ -14,11 +19,6 @@
 		flex-direction: column;
 		gap: 20px;
 		max-width: 1280px;
-		flex-grow: 1;
-		&:after{
-      // content: "|";
-      // animation: blink 500ms linear infinite alternate;
-    }
 		p {
 			line-height: 23px;
 			font-size: 17px;
@@ -27,31 +27,6 @@
 
 			overflow: hidden;
 			width: 100%;
-			// &:nth-child(1) {
-			// 	animation: typing 4s steps(60, end);
-			// }
-			// &:nth-child(2) {
-			// 	animation: typing 8s steps(60, end);
-			// }
-			// &:nth-child(3) {
-			// 	animation: typing 12s steps(60, end);
-			// }
-			// &:nth-child(4) {
-			// 	animation: typing 16s steps(60, end);
-			// }
-			// &:nth-child(5) {
-			// 	animation: typing 20s steps(60, end);
-			// }
-			// &:nth-child(6) {
-			// 	animation: typing 24s steps(60, end);
-			// }
-			// &:nth-child(7) {
-			// 	animation: typing 28s steps(60, end);
-			// }
-			// &:nth-child(8) {
-			// 	animation: typing 32s steps(60, end);
-			// }
-
 		}
 	}
 
@@ -66,26 +41,51 @@
 .title {
 }
 .main-socio {
-
 	&__item {
 	}
 }
-
-@keyframes typing {
-	0% {
-		width: 1px;
-	}
-
-	50% {
-		width: 1px;
-	}
-
-	100% {
-		width: 100%;
+@media (max-width: 1565px) {
+	.about__body.active + .road__body + .main__footer {
+		display: none;
 	}
 }
 
-// @keyframes blink{
-//   0%{opacity: 0;}
-//   100%{opacity: 1;}
-// }
+@media (max-width: 1308px) {
+	.about__body {
+		margin-top: 170px;
+		gap: 100px;
+	}
+}
+
+@media (max-height: 1278px) {
+	.about__body {
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+	.about__content {
+		padding-top: 20px;
+		padding-bottom: 50px;
+		overflow: auto;
+	}
+	.about__content p {
+		overflow: visible;
+		height: 100%;
+	}
+}
+
+@media (max-width: 500px) {
+	.about__body {
+		margin-top: 100px;
+		gap: 70px;
+	}
+	.about__content {
+		text-align: center;
+	}
+}
+
+@media (max-width: 414px) {
+	.about__body {
+		margin-top: 100px;
+		gap: 50px;
+	}
+}

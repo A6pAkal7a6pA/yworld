@@ -1,12 +1,17 @@
 .road {
 	&__body {
 		flex-direction: column;
-		gap: 45px;
-		justify-content: space-between;
-		flex-grow: 1;
+		gap: 100px;
+		max-width: 1730px;
+		padding: 0 15px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 190px;
 	}
 
 	&__title {
+		font-size: 100px;
+		text-align: right;
 	}
 
 	&__phases {
@@ -14,6 +19,9 @@
 		flex-direction: column;
 		gap: 30px;
 		max-width: 1284px;
+		width: 100%;
+		padding-bottom: 50px;
+		overflow: auto;
 	}
 
 	&__phase {
@@ -43,9 +51,61 @@
 
 	&__socio {
 	}
+
+	@media (max-height: 1080px) {
+		&__body {
+			overflow-x: hidden;
+			overflow-y: auto;
+		}
+	}
 }
 
 .main-socio {
 	&__item {
+	}
+}
+@media (max-width: 1565px) {
+	.road__body {
+		overflow-x: hidden;
+		overflow-y: auto;
+	}
+	.road__body.active + .main__footer {
+		display: none;
+	}
+}
+
+@media (max-width: 1308px) {
+	.road__body {
+		margin-top: 170px;
+		gap: 100px;
+	}
+	.title {
+		text-align: center;
+		font-size: 80px;
+		span {
+			display: block;
+		}
+	}
+}
+
+@media (max-width: 500px) {
+	.road__body {
+		gap: 70px;
+		margin-top: 100px;
+	}
+	.title {
+		font-size: 60px;
+	}
+	.road__phases {
+		text-align: center;
+		padding-top: 20px;
+	}
+}
+@media (max-width: 414px) {
+	.road__body {
+		gap: 50px;
+	}
+	.title {
+		font-size: 50px;
 	}
 }
